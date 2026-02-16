@@ -1,6 +1,7 @@
 # Table of contents
 
 * [The Last Guardian Protocol](README.md)
+* [Living System Brief](living-system-brief.md)
 * [THIS\_WILL\_ORIENT\_YOU](THIS_WILL_ORIENT_YOU.md)
 * [The Last Guardian Manifesto](manifesto_readme.md)
 * [notebooks](notebooks/README.md)
@@ -43,7 +44,7 @@
   * [Verification Log: Spectral\_Telic\_Unified\_Spec\_v0.2.md](notebooks/TEMP_Spec_Verification_Log_v0.2.md)
   * [Verification Log: Statistical\_Framework\_for\_Verification\_v0.1.md](notebooks/TEMP_Statistical_Framework_for_Verification_Verification_Log_v0.1.md)
   * [Verification Log: Statistical\_Framework\_for\_Verification\_v0.2.md](notebooks/TEMP_Statistical_Framework_for_Verification_Verification_Log_v0.2.md)
-  * [Verification Log: Structural\_Isomorphisms\_v0.1.md](notebooks/TEMP_Structural_Isomorphisms_v0.1.md)
+  * [Verification Log: Cross-Formalism Structural Mappings - v0.1](notebooks/TEMP_Structural_Isomorphisms_v0.1.md)
   * [TEMP\_Telo\_Definition\_and\_Alignment\_v0.1](notebooks/TEMP_Telo_Definition_and_Alignment_v0.1.md)
   * [Verification Log: Telo\_and\_Alignment\_Weights\_Formalism\_v0.1.md](notebooks/TEMP_Telo_and_Alignment_Weights_Formalism_v0.1.md)
   * [Verification Log: Ψ\_Interpretations\_CTMU\_Bridge\_v0.1.md](notebooks/TEMP_Ψ_Interpretations_CTMU_Bridge_v0.1.md)
@@ -78,11 +79,11 @@
     * [Gamma Align Formalism - v0.2](notebooks/INTERPRETATION/Gamma_Align_Formalism_v0.2.md)
     * [TEMP\_Statistical\_Framework\_for\_Verification\_v0.1](notebooks/INTERPRETATION/Statistical_Framework_for_Verification_v0.1.md)
     * [TEMP\_Statistical\_Framework\_for\_Verification\_v0.2](notebooks/INTERPRETATION/Statistical_Framework_for_Verification_v0.2.md)
-    * [Structural Isomorphisms - v0.1](notebooks/INTERPRETATION/Structural_Isomorphisms_v0.1.md)
+    * [Cross-Formalism Structural Mappings - v0.1](notebooks/INTERPRETATION/Structural_Isomorphisms_v0.1.md)
     * [Telo Operator and Alignment Weights Formalism - v0.1](notebooks/INTERPRETATION/Telo_and_Alignment_Weights_Formalism_v0.1.md)
     * [Ψ Interpretations & CTMU Bridge - v0.1](notebooks/INTERPRETATION/Ψ_Interpretations_CTMU_Bridge_v0.1.md)
     * [Ψ Interpretations & CTMU Bridge - v0.2](notebooks/INTERPRETATION/Ψ_Interpretations_CTMU_Bridge_v0.2.md)
-    * [Ψ Lambda Calculus Isomorphism - v0.1](notebooks/INTERPRETATION/Ψ_Lambda_Isomorphism_v0.1.md)
+    * [Ψ ↔ λμ/CPS Structural Mapping - v0.1](notebooks/INTERPRETATION/Ψ_Lambda_Isomorphism_v0.1.md)
   * [METASTRUCTURE\_OF\_METASTRUCTURE\_v0.1md](notebooks/metastructure_of_metastructure_v0.1md/README.md)
     * [Meta-Structure of Meta-Structure - v0.1](notebooks/METASTRUCTURE_OF_METASTRUCTURE_v0.1md/METASTRUCTURE_OF_METASTRUCTURE_v0.1.md)
   * [OPERATORS](notebooks/operators/README.md)
@@ -101,6 +102,7 @@
       * [TEMP\_Recursive\_Gauge\_Symmetry\_Analysis.md](notebooks/ARCHIVE/EQUATIONS/2025-11-15_QRFT_Core_Equations_v0.2_Recursive_Gauge_Symmetry_Analysis.md)
       * [Temporary Analysis: Symbolic Collapse Action Functional (S\_GLEN)](notebooks/ARCHIVE/EQUATIONS/2025-11-15_QRFT_Core_Equations_v0.2_S_GLEN_Analysis.md)
       * [TEMP\_Topological\_Collapse\_Invariant\_Analysis.md](notebooks/ARCHIVE/EQUATIONS/2025-11-15_QRFT_Core_Equations_v0.2_Topological_Collapse_Invariant_Analysis.md)
+  * [Kleiner (2024) — Structural turn in consciousness science](notebooks/kleiner-2024-structural-turn-in-consciousness-science.md)
 
 ## Sandbox
 
@@ -114,6 +116,8 @@
   * [SemVer](sandbox/ops-+-triage/semver.md)
   * [paradigms](sandbox/ops-+-triage/paradigms.md)
   * [Inbox (legacy)](sandbox/ops-+-triage/user_workspace.md)
+  * [Worklog](sandbox/ops-+-triage/worklog.md)
+  * [Phase board](sandbox/ops-+-triage/phase-board.md)
 * [Draft specs](sandbox/draft-specs/README.md)
   * [DRAFT — Ψ System Canonical Spec (sys\_patch)](sandbox/draft-specs/sys_patch.md)
 * [Sandbox workflow](sandbox/sandbox-workflow.md)

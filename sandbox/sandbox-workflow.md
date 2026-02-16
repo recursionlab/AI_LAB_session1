@@ -128,3 +128,19 @@ If you want a concrete engineering target:
 * **Evaluator:** undefined-symbol audit, invariant violations, contradiction list.
 
 </details>
+
+### Summary
+
+Keep two layers: **Workbench** (fast, messy) and **Canon** (slow, testable).
+
+Extract every dump into small nodes (Concepts, Operators, Claims, Tests, Issues).
+
+Only promote extracted nodes. Never promote raw dumps.
+
+### Next steps
+
+1. Drop your next capture into [Inbox](inbox/).
+2. Run the **Extract (5 minutes)** prompt. Produce a parts list.
+3. Route each bullet in [Ops + Triage](ops-+-triage/): **Promote / Park / Kill**.
+4. Promote one node into minimal canon shape: definition, assumptions, falsifiers, links.
+5. If it’s not stable, label it **DRAFT/TEMP/WORKING/CANON CANDIDATE** and leave it.
