@@ -1,4 +1,4 @@
-"use client";
+m-"use client";
 
 import React, { useState, useEffect } from 'react';
 import { AvatarPreview } from '@/components/avatar/AvatarPreview';
@@ -24,7 +24,7 @@ export default function Home() {
         if (!decodedConfig || typeof decodedConfig !== 'object' || !decodedConfig.faceShape) {
           throw new Error('Invalid avatar config structure');
         }
-        console.log('Parsed avatar config:', decodedConfig);
+        // console.log removed for security
         setConfig({ ...defaultAvatarConfig, ...decodedConfig });
         toast.success('Avatar loaded from shared link!');
       } catch (err) {

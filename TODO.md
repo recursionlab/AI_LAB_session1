@@ -1,18 +1,14 @@
-# .dyadignore Organization - COMPLETE ✅
+# Fix Verified Code Issues - Approved Plan Implementation
+Track progress on fixing all 7 issues across 4 files.
 
-## Completed Steps:
-- [x] 1. Pre-validate: Confirmed anchor line in .dyadignore.
-- [x] 2. Edit .dyadignore: Added ignores for notebooks/ARCHIVE/, notebooks/TEMP_*, sandbox/, user_workspace/.
-- [x] 3. Post-validate: Re-read confirms new sections added with proper formatting.
-- [x] 4. Run `pnpm lint`: Executed (interactive ESLint setup prompted; no errors in .dyadignore).
-- [x] 5. Verify: Patterns target ~60+ noise files; future AI scans will focus on src/, active notebooks/.
+## Pending Steps
+- [ ] Step 1: Edit .dyadignore - Add env variants and remove duplicates
+- [ ] Step 2: Edit package.json - Fix eslint-config-next version to ^15.1.0
+- [ ] Step 3: Edit src/app/page.tsx - Remove console.log, add sanitizer, update merge logic
+- [ ] Step 4: Edit src/components/avatar/ExportOptions.tsx - Fix handleShare error handling
+- [ ] Step 5: Run `pnpm install`
+- [ ] Step 6: Run `pnpm lint` to verify
+- [ ] Step 7: Test app with `pnpm dev` (URL param, share, clipboard)
 
+**Progress: 0/7 complete**
 
-  - notebooks/ARCHIVE/
-  - notebooks/TEMP_*
-  - sandbox/
-  - user_workspace/
-
-
-
-[x] Previous: Avatar fixes complete.
