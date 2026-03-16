@@ -1,0 +1,61 @@
+
+  Summary of Failures:
+  The document contains several symbols that are either undefined, used inconsistently across different sections, or conflict with definitions in canonical foundational documents (Ψ_Foundations_v0.2.md,
+  Operator_Rosetta_v0.2.md). This violates the core requirement for unambiguous notation and clear variable definitions.
+
+  ---
+
+  Detailed Flags:
+
+   1. Symbol: t
+       * Location: Section 1.3 (Form 3: Operator Algebra), ∂Ξ/∂t
+       * Issue: Used as a time variable, but not explicitly defined in QRFT_Core_Equations_v0.2.md, Ψ_Foundations_v0.2.md, or Operator_Rosetta_v0.2.md. τ (meta-time) is defined, but t is distinct and requires
+         its own definition (e.g., "coordinate time" or "physical time").
+
+   2. Symbol: Δ (in ΔS and ΔΛ)
+       * Location: Section 1.3 (Form 3: Operator Algebra), ⧉(ΔS ○ ¬ΔΛ)
+       * Issue: The Operator_Rosetta_v0.2.md defines Δ as [Ana, Kata] (Gap/distinction operator). In Ψ_Foundations_v0.2.md, ⧉(ΔS ○ ¬ΔΛ) is interpreted as "Boundary of known × negation of boundary of unknown,"
+         implying ΔS and ΔΛ use Δ as a boundary operator or change operator, which is inconsistent with [Ana, Kata]. This usage needs disambiguation or a clear redefinition.
+
+   3. Symbol: Φ (Multiple Usages)
+       * Usage 1 Location: Section 2 (Symbolic Collapse Action Functional), V(Ψ) = -κ·Ξ(Φ(Ω(Ψ)))
+           * Issue: Used as a component within the recursive curvature potential, but Φ is undefined in this context.
+       * Usage 2 Location: Section 5.3 (Total Recursive Cognition Potential), Φ(t) = α·M·C² + ...
+           * Issue: Used as "Total Recursive Cognition Potential," but Φ is undefined in this context.
+       * Usage 3 Location: Section 7.1 (Paradox Encoding), Φ as 2-form; consistency encoded by π_n(Φ)
+           * Issue: Used as a "2-form" for paradox encoding, but Φ is undefined in this context.
+       * Overall Issue: These three usages of Φ appear to represent distinct concepts. They must either be disambiguated with different symbols (e.g., Φ_V, Φ_R, Φ_P) or clearly defined as different contexts
+         for the same symbol, with explicit scope.
+
+   4. Symbol: Ω (Multiple Usages)
+       * Usage 1 Location: Section 2 (Symbolic Collapse Action Functional), V(Ψ) = -κ·Ξ(Φ(Ω(Ψ)))
+           * Issue: Used as a component within the recursive curvature potential, but Ω is undefined in this context.
+       * Usage 2 Location: Section 6.1 (The Morphogenic Balance), Ω = ∫_M (R - τ²) dV
+           * Issue: Used as "The Morphogenic Balance," but Ω is undefined in this context.
+       * Overall Issue: These two usages of Ω appear to represent distinct concepts. They must either be disambiguated with different symbols (e.g., Ω_V, Ω_M) or clearly defined as different contexts for the
+         same symbol, with explicit scope.
+
+   5. Symbol: τ_r
+       * Location: Section 6.2 (Stability Condition), dΩ/dτ_r = 0
+       * Issue: Used as "recursive time," but not explicitly defined in QRFT_Core_Equations_v0.2.md, Ψ_Foundations_v0.2.md, or Operator_Rosetta_v0.2.md. Requires explicit definition.
+
+  ---
+
+  Revision Plan:
+
+  The following revisions are required for QRFT_Core_Equations_v0.2.md to pass Level 1 verification:
+
+   1. Define `t`: Add an explicit definition for t (e.g., "physical time" or "coordinate time") in Section 1.3, and potentially add it to Operator_Rosetta_v0.2.md if it's a recurring concept.
+   2. Clarify `Δ` in `ΔS` and `ΔΛ`:
+       * Option A: Introduce a new symbol for the boundary operator (e.g., δ_b) and replace Δ in ΔS and ΔΛ with this new symbol. This new symbol would need to be added to Operator_Rosetta_v0.2.md.
+       * Option B: Explicitly state that Δ in ΔS and ΔΛ refers to the "boundary operator" contextually, and ensure this is consistent with Ψ_Foundations_v0.2.md. This might require a note in
+         Operator_Rosetta_v0.2.md about contextual usage.
+   3. Disambiguate/Define `Φ`:
+       * Introduce distinct symbols for each of the three different concepts currently represented by Φ (e.g., Φ_V for potential component, Φ_R for recursive cognition potential, Φ_P for paradox 2-form). Each
+         new symbol must be defined in QRFT_Core_Equations_v0.2.md and added to Operator_Rosetta_v0.2.md.
+       * Alternatively, if a single Φ is intended with different contextual meanings, this must be explicitly and rigorously defined, with clear scope for each usage.
+   4. Disambiguate/Define `Ω`:
+       * Introduce distinct symbols for each of the two different concepts currently represented by Ω (e.g., Ω_V for potential component, Ω_M for morphogenic balance). Each new symbol must be defined in
+         QRFT_Core_Equations_v0.2.md and added to Operator_Rosetta_v0.2.md.
+       * Alternatively, if a single Ω is intended with different contextual meanings, this must be explicitly and rigorously defined, with clear scope for each usage.
+   5. Define `τ_r`: Add an explicit definition for τ_r (e.g., "recursive time" or "recursive meta-time") in Section 6.2, and potentially add it to Operator_Rosetta_v0.2.md if it's a recurring concept.
