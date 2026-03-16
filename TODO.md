@@ -1,14 +1,11 @@
-# Fix Verified Code Issues - Approved Plan Implementation
-Track progress on fixing all 7 issues across 4 files.
+# Ultra-Strict Gitignore Optimization (Meta-Structural)
+Branch: blackboxai/fix-avatar-ignores-validation-export
 
-## Pending Steps
-- [ ] Step 1: Edit .dyadignore - Add env variants and remove duplicates
-- [ ] Step 2: Edit package.json - Fix eslint-config-next version to ^15.1.0
-- [ ] Step 3: Edit src/app/page.tsx - Remove console.log, add sanitizer, update merge logic
-- [ ] Step 4: Edit src/components/avatar/ExportOptions.tsx - Fix handleShare error handling
-- [ ] Step 5: Run `pnpm install`
-- [ ] Step 6: Run `pnpm lint` to verify
-- [ ] Step 7: Test app with `pnpm dev` (URL param, share, clipboard)
+## Steps:
+- [x] 1. Edit .gitignore: Implement meta-filter (* ignore, ! core only)
+- [ ] 2. Git add/commit/push changes
+- [ ] 3. Create/update PR via gh pr
+- [ ] 4. Verify context window reduced (restart VSCode/Blackbox)
+- [ ] 5. Complete
 
-**Progress: 0/7 complete**
-
+**Progress:** Step 1 complete. Next: Git commit/push/PR.

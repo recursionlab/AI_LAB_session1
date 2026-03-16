@@ -120,3 +120,42 @@ config/secrets.yml
 *.zip
 *.tar
 *.dmg
+
+# Meta-Structural Telo-Filter: Ultra-Strict Core-Only (Minimize Context Bloat)
+# Default shadow everything
+*
+
+# Telic Core: Runtime App
+!src/
+!public/
+!package.json
+!pnpm-lock.yaml
+!next.config.ts
+!tailwind.config.ts
+!tsconfig.json
+!postcss.config.mjs
+!components.json
+!.eslintrc.json
+!.gitignore
+
+# Meta-Ops Root Essentials
+!README.md
+!SUMMARY.md
+!TODO.md
+!LICENSE
+!AI_RULES.md
+!manifesto_readme.md
+!THIS_WILL_ORIENT_YOU.md
+
+# Spectral Overrides: Keep runtime assets, shadow bulk UI
+!public/*.svg
+src/components/ui/     # Shadow shadcn bulk
+!src/components/avatar/**
+
+# Periphery Complete Shadow
+notebooks/
+sandbox/
+user_workspace/
+*.md
+*.log
+*.tmp
