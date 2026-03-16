@@ -41,3 +41,16 @@ npm-debug.log*
 *.db
 *.sqlite
 supabase/migrations/  # Ignore supabase/migrations/ (active)
+
+# Project-specific noise reduction for AI analysis
+# Archive and old versions
+notebooks/ARCHIVE/
+
+# Temporary working files/logs
+notebooks/TEMP_*
+
+# Sandbox drafts (inactive)
+sandbox/
+
+# Personal workspace
+user_workspace/
