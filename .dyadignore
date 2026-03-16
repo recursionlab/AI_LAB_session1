@@ -17,20 +17,20 @@ build/
 .hg/
 
 # Environment & Secrets
-.env*
-*.local
+.env
+.env.local
+.env.production.local
+!.env.example
+!.env.template
 secrets/
 
-# Media and Large Assets
+# Media and Large Assets (targeted)
 public/assets/
 public/videos/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-*.mp4
-*.pdf
+build/
+dist/
+.next/cache/
+public/generated/
 
 # Logs
 logs/
@@ -40,4 +40,4 @@ npm-debug.log*
 # Database (Local SQLite or Dumps)
 *.db
 *.sqlite
-supabase/migrations/  # Only ignore if you have hundreds of files here
+supabase/migrations/  # Ignore supabase/migrations/ (active)

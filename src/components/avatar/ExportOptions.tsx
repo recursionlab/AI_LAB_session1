@@ -65,40 +65,55 @@ export function ExportOptions({ config }: ExportOptionsProps) {
       }
     };
     
+    img.onerror = () => {
+      toast.error('Failed to load avatar for export');
+    };
+    
     img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
   };
 
-  const handleCopyConfig = () => {
-    navigator.clipboard.writeText(JSON.stringify(config, null, 2));
+const handleCopyConfig = async () => {
+  try {
+    await navigator.clipboard.writeText(JSON.stringify(config, null, 2));
     toast.success('Configuration copied to clipboard!');
-  };
+  } catch (err) {
+    console.error('Copy failed:', err);
+    toast.error('Failed to copy configuration');
+  }
+};
 
-  const handleCopyAsCode = () => {
-    const codeString = `const avatarConfig = ${JSON.stringify(config, null, 2)};`;
-    navigator.clipboard.writeText(codeString);
+const handleCopyAsCode = async () => {
+  const codeString = `const avatarConfig = ${JSON.stringify(config, null, 2)};`;
+  try {
+    await navigator.clipboard.writeText(codeString);
     toast.success('Code copied to clipboard!');
-  };
+  } catch (err) {
+    console.error('Copy failed:', err);
+    toast.error('Failed to copy code');
+  }
+};
 
-  const handleShare = async () => {
-    const configString = btoa(JSON.stringify(config));
-    const shareUrl = `${window.location.origin}?avatar=${configString}`;
-    
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: 'My Jarvis Avatar',
-          text: 'Check out my custom avatar!',
-          url: shareUrl,
-        });
-      } catch (err) {
-        navigator.clipboard.writeText(shareUrl);
-        toast.success('Share link copied to clipboard!');
-      }
-    } else {
-      navigator.clipboard.writeText(shareUrl);
+const handleShare = async () => {
+  const configString = btoa(unescape(encodeURIComponent(JSON.stringify(config))));
+  const shareUrl = `${window.location.origin}?avatar=${configString}`;
+  
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: 'My Jarvis Avatar',
+        text: 'Check out my custom avatar!',
+        url: shareUrl,
+      });
+    } catch (err) {
+      if (err.name === 'AbortError') return;
+      await navigator.clipboard.writeText(shareUrl);
       toast.success('Share link copied to clipboard!');
     }
-  };
+  } else {
+    await navigator.clipboard.writeText(shareUrl);
+    toast.success('Share link copied to clipboard!');
+  }
+};
 
   return (
     <Card>

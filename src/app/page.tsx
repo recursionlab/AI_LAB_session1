@@ -20,10 +20,16 @@ export default function Home() {
     if (avatarParam) {
       try {
         const decodedConfig = JSON.parse(atob(avatarParam));
+        // Basic validation
+        if (!decodedConfig || typeof decodedConfig !== 'object' || !decodedConfig.faceShape) {
+          throw new Error('Invalid avatar config structure');
+        }
+        console.log('Parsed avatar config:', decodedConfig);
         setConfig({ ...defaultAvatarConfig, ...decodedConfig });
         toast.success('Avatar loaded from shared link!');
       } catch (err) {
-        console.error('Failed to parse avatar config from URL');
+        console.error('Failed to parse avatar config from URL:', err);
+        toast.error('Invalid shared avatar link');
       }
     }
   }, []);
