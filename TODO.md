@@ -13,6 +13,6 @@
   - sandbox/
   - user_workspace/
 
-This optimizes AI analysis on core code (src/), active research (EQUATIONS/, FOUNDATIONS/, etc.), reducing noise by 40%+ file count.
+
 
 [x] Previous: Avatar fixes complete.

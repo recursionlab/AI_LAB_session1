@@ -60,3 +60,7 @@ notebooks/INTERPRETATION/
 notebooks/METASTRUCTURE*/
 src/components/ui/
 public/*.svg
+
+# Non-core docs & secondary research (AI coder focus)
+notebooks/kleiner-*.md
+notebooks/CONTRIBUT
