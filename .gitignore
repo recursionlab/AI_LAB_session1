@@ -78,3 +78,4 @@ config/secrets.yml
 *.zip
 *.tar
 *.dmg
+.dyad/
