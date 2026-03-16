@@ -54,3 +54,9 @@ sandbox/
 
 # Personal workspace
 user_workspace/
+
+# Additional bulk sections for further noise reduction
+notebooks/INTERPRETATION/
+notebooks/METASTRUCTURE*/
+src/components/ui/
+public/*.svg

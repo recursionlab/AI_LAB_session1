@@ -7,9 +7,7 @@
 - [x] 4. Run `pnpm lint`: Executed (interactive ESLint setup prompted; no errors in .dyadignore).
 - [x] 5. Verify: Patterns target ~60+ noise files; future AI scans will focus on src/, active notebooks/.
 
-## Updated .dyadignore Summary:
-- General: node_modules/, .next/, .env*, logs*, etc.
-- **New Project-Specific**:
+
   - notebooks/ARCHIVE/
   - notebooks/TEMP_*
   - sandbox/
